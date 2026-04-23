@@ -1,10 +1,7 @@
 package org.freedu.nsda_job1_xml
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import org.freedu.nsda_job1_xml.databinding.ItemProductBinding
@@ -27,8 +24,7 @@ class ProductAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
-        val binding =
-            ItemProductBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemProductBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ProductViewHolder(binding)
     }
 

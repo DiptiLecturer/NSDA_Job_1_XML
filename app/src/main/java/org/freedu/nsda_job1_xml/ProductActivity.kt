@@ -16,7 +16,7 @@ import retrofit2.Response
 
 class ProductActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityProductBinding  // ViewBinding for activity
+    private lateinit var binding: ActivityProductBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +26,6 @@ class ProductActivity : AppCompatActivity() {
         binding.rvProducts.layoutManager = LinearLayoutManager(this)
 
         binding.btnRetry.setOnClickListener {
-            binding.btnRetry.visibility = View.GONE
             fetchProducts()
         }
 
